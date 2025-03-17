@@ -154,9 +154,9 @@ function expressionFormat(expression) {
 function handleScientificOperations(value) {
   const num = parseFloat(currentInput);
   const operations = {
-    "Sin": Math.sin,
-    "Cos": Math.cos,
-    "Tan": Math.tan,
+    "Sin": (n) => Math.sin(n * (Math.PI / 180)),
+    "Cos": (n) => Math.cos(n * (Math.PI / 180)),
+    "Tan": (n) => Math.tan(n * (Math.PI / 180)),
     "log": (n) => (n > 0 ? Math.log(n) : "Error"),
     "x²": (n) => n ** 2,
     "e": () => Math.E
