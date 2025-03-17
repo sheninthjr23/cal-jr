@@ -1,0 +1,112 @@
+* {
+  font-family: 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.outer-container {
+  width: 320px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.input-display {
+  background-color: #292929;
+  color: #0ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.5);
+  word-wrap: break-word;
+  min-height: 70px;
+}
+
+.input-history {
+  font-size: 1rem;
+  color: #bbb;
+  opacity: 0.7;
+}
+
+.inner-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background: linear-gradient(145deg, #2e2e2e, #232323);
+  color: white;
+  box-shadow: 2px 2px 6px #181818, -2px -2px 6px #383838;
+}
+
+.btn-primary:hover {
+  background: #444;
+}
+
+
+
+.btn-secondary:hover {
+  background: #b6b3b3;
+}
+
+.btn-equal {
+  background: #0d6efd;
+  color: white;
+}
+
+.btn-equal:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 400px) {
+  .outer-container {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+  }
+  .input-display {
+    font-size: 1.5rem;
+  }
+  button {
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
